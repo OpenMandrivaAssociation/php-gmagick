@@ -5,7 +5,7 @@
 
 Summary:	Provides a wrapper to the GraphicsMagick library
 Name:		php-%{modname}
-Version:	1.0.3b3
+Version:	1.0.3b5
 Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
