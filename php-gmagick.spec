@@ -14,6 +14,7 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}b1.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	graphicsmagick-devel >= 1.0.0
+BuildRequires:	libsm-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
