@@ -5,8 +5,8 @@
 
 Summary:	Provides a wrapper to the GraphicsMagick library
 Name:		php-%{modname}
-Version:	1.0.8
-Release:	%mkrel 0.0.b1.8
+Version:	1.0.10
+Release:	%mkrel 0.0.b1.1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/gmagick/
@@ -73,4 +73,3 @@ rm -rf %{buildroot}
 %doc README package*.xml 
 %config(noreplace) %attr(0644,root,root) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
-
