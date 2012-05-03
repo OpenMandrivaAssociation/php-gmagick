@@ -6,7 +6,7 @@
 Summary:	Provides a wrapper to the GraphicsMagick library
 Name:		php-%{modname}
 Version:	1.0.10
-Release:	%mkrel 0.0.b1.2
+Release:	%mkrel 0.0.b1.3
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/gmagick/
