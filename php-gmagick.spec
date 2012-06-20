@@ -6,11 +6,11 @@
 Summary:	Provides a wrapper to the GraphicsMagick library
 Name:		php-%{modname}
 Version:	1.1.0
-Release:	%mkrel 0.0.RC2.1
+Release:	%mkrel 0.0.RC3.1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/gmagick/
-Source0:	http://pecl.php.net/get/%{modname}-%{version}RC2.tgz
+Source0:	http://pecl.php.net/get/%{modname}-%{version}RC3.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	graphicsmagick-devel >= 1.0.0
@@ -24,7 +24,7 @@ version 1.2.6+ and PHP 5.1.3+.
 
 %prep
 
-%setup -q -n %{modname}-%{version}RC2
+%setup -q -n %{modname}-%{version}RC3
 [ "../package*.xml" != "/" ] && mv ../package*.xml .
 
 find -type f | xargs chmod 644
