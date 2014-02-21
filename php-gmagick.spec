@@ -5,17 +5,16 @@
 
 Summary:	Provides a wrapper to the GraphicsMagick library
 Name:		php-%{modname}
-Version:	1.1.0
-Release:	%mkrel 0.0.RC3.1
+Version:	1.1.2
+Release:	1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/gmagick/
-Source0:	http://pecl.php.net/get/%{modname}-%{version}RC3.tgz
+Source0:	http://pecl.php.net/get/gmagick-1.1.2RC1.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	graphicsmagick-devel >= 1.0.0
 BuildRequires:	libsm-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Gmagick is a php extension to create, modify and obtain meta information of
@@ -42,7 +41,6 @@ phpize
 mv modules/*.so .
 
 %install
-rm -rf %{buildroot} 
 
 install -d %{buildroot}%{_libdir}/php/extensions
 install -d %{buildroot}%{_sysconfdir}/php.d
@@ -66,10 +64,8 @@ if [ "$1" = "0" ]; then
 fi
 
 %clean
-rm -rf %{buildroot}
 
 %files 
-%defattr(-,root,root)
 %doc README package*.xml 
 %config(noreplace) %attr(0644,root,root) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
@@ -160,3 +156,4 @@ rm -rf %{buildroot}
 
 * Sat Oct 03 2009 Oden Eriksson <oeriksson@mandriva.com> 1.0.1b1-1mdv2010.0
 - initial Mandriva package
+
