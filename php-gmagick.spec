@@ -23,7 +23,7 @@ version 1.2.6+ and PHP 5.1.3+.
 
 %prep
 
-%setup -q -n %{modname}-%{version}RC3
+%setup -qn %{modname}-%{version}RC1
 [ "../package*.xml" != "/" ] && mv ../package*.xml .
 
 find -type f | xargs chmod 644
