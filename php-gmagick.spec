@@ -11,6 +11,11 @@ Group:		Development/PHP
 License:	PHP License
 URL:		https://pecl.php.net/package/gmagick/
 Source0:	http://pecl.php.net/get/gmagick-1.1.2RC1.tgz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	graphicsmagick-devel >= 1.0.0
